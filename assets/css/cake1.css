@@ -215,6 +215,7 @@ body {
 }
 
 .text-btn {
+  text-align: center;
   margin-left: 44%;
   margin-top: 10px;
   width: 40px;
