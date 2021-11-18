@@ -10,6 +10,11 @@ html {
 .text {
   text-align: justify;
   font-size: 20px;
+  text-align: center;
+}
+
+.gif {
+  left: 50%;
 }
 
 .gif-boy {
