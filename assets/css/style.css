@@ -32,6 +32,7 @@ body {
   margin-top: 17px;
   border-radius: 15px;
   -webkit-appearance: none;
+  border: 1px solid yellow;
 }
 
 .fa-solid {
