@@ -224,12 +224,14 @@ body {
 .btn {
   display: inline-block;
   margin-left: 40%;
+  user-select: none;
+  pointer-events: none;
 }
 
 .text-btn {
   text-align: center;
-
   margin-top: 10px;
+  color: #999;
   width: 50px;
   height: 25px;
   background-color: plum;
@@ -237,8 +239,6 @@ body {
   -webkit-appearance: none;
   cursor: pointer;
   border: 1px solid plum;
-  /* user-select: none;
-  pointer-events: none; */
 }
 
 .wish {
@@ -270,7 +270,7 @@ body {
 
 .text-label {
   position: absolute;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   left: 45px;
   user-select: none;
@@ -278,12 +278,6 @@ body {
   pointer-events: none;
   transition: 0.25s ease;
 }
-
-/* input[type="text"]:valid + .btn {
-  user-select: auto;
-  pointer-events: auto;
-  color: black;
-} */
 
 .text-wish:not(:placeholder-shown) + .text-label,
 .text-wish:focus + .text-label {
@@ -295,6 +289,15 @@ body {
   color: #6a5af9;
   border-top: pink; */
   display: none;
+}
+
+.text-wish:required:valid ~ .btn {
+  user-select: auto;
+  pointer-events: auto;
+}
+
+.text-wish:required:valid ~ .btn .text-btn {
+  color: #000000;
 }
 
 @keyframes fadeIn {
