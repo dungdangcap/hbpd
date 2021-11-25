@@ -298,6 +298,7 @@ body {
 
 .text-wish:required:valid ~ .btn .text-btn {
   color: #000000;
+  transition: 0.3s ease;
 }
 
 @keyframes fadeIn {
