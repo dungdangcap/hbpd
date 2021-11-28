@@ -281,14 +281,13 @@ body {
 
 .text-wish:not(:placeholder-shown) + .text-label,
 .text-wish:focus + .text-label {
-  /* top: 10px;
+  top: 70px;
   left: 40px;
   padding: 0 10px;
   display: inline-block;
-  background-color: white;
+  background-image: linear-gradient(180deg, pink, white);
   color: #6a5af9;
-  border-top: pink; */
-  display: none;
+  border-top: pink;
 }
 
 .text-wish:required:valid ~ .btn {
@@ -298,6 +297,7 @@ body {
 
 .text-wish:required:valid ~ .btn .text-btn {
   color: #000000;
+  transition: 0.3s ease;
 }
 
 @keyframes fadeIn {
